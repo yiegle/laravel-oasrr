@@ -1,18 +1,23 @@
 {
-    "name": "yiegle/enter-the-library-name",
+    "name": "orifuji/laravel-oas-rr",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Yiegle\\Main\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "yiegle",
             "email": "aquila.minakami@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Orifuji\\LaravelOasRr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Orifuji\\LaravelOasRr\\Test\\": "tests/"
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
         "vimeo/psalm": "^4.21",
@@ -23,7 +28,7 @@
         "test": "./vendor/bin/phpunit",
         "test-g": "./vendor/bin/phpunit --group",
         "fix": "./vendor/bin/phpcbf --standard=PSR12",
-        "fix-dry": "./vendor/bin/phpcs --standard=PSR12",
+        "fix-dry-run": "./vendor/bin/phpcs --standard=PSR12",
         "psalm": "./vendor/bin/psalm",
         "apply-git-hooks": "./vendor/bin/cghooks update"
     },
